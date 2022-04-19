@@ -1,0 +1,7 @@
+<div class="container">
+<div *ngFor="let location of locations" class="card">
+  <h3>{{location.name}}</h3>
+  <p *ngIf="location.climate != 'TODO'">Climate: {{location.climate}}</p>
+  <p *ngIf="location.terrain != 'TODO'">Terrain: {{location.terrain}}</p>
+</div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container" *ngIf="film">
+  <div class="card">
+      <img routerLink="/{{film.id}}" src="{{film.image}}" alt="{{film.title}}">
+ 
+      <h4>{{film.title}} ({{film.original_title}})</h4>
+      <p>{{film.description}}</p>
+      <p>Director: {{film.director}}</p>
+      <p>Producer: {{film.producer}}</p>
+      <p>Release Date: {{film.release_date}}</p>
+
+  </div>
+</div>
+
